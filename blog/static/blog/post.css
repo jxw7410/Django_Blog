@@ -1,0 +1,46 @@
+.post-ctn{
+    display:flex;
+    flex-direction: column;
+    min-width: 350px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.post{
+    display:flex;
+    justify-content: center;
+    background: white;
+    margin-bottom: 10px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 3px;
+    width: 100%;
+    height: 150px;
+}
+
+.post-list{
+    margin: 20px;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.post-author{
+    color: rgb(43, 126, 221);
+    font-size: 24px;
+}
+
+.post-date{
+    color: rgb(125, 125, 125);
+}
+
+.post-title{
+    padding-top: 10px;
+    border-top: 1px solid rgb(175,175,175);
+    font-size: 24px;
+    color: rgb(75, 75, 75);
+}
+
+.post-content{
+    padding-top: 10px;
+}

@@ -1,0 +1,20 @@
+@import 'nav.css';
+@import 'post.css';
+
+body{
+    background: rgb(240, 240, 240);
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+
+main{
+    margin-top: 100px;
+    display: flex;
+    max-width: 60%;
+    min-width: 350px;
+    width: 100%;
+}
+

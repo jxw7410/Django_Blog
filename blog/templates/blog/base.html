@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/global.css' %}">
+    <link rel="stylesheet" type='text/css' href="{% static 'blog/main.css' %}">
+    <title>{%block title%}{% endblock %}</title>
+</head>
+<body>
+    <!--Nav Bar Header-->
+    <header>
+        <nav class='main-nav bg-dark flex-vert-ctr fixed-top'>
+            <div class='nav-container'>
+                <section class='nav-left flex-default'>
+                    <h1 class='site-title'>Django Blog</h1>
+                    <span class='nav-link-ctn'><a class='nav-link' href='#'>Home</a></span>
+                    <span class='nav-link-ctn'><a class='nav-link' href='#'>About</a></span>
+                </section>
+
+                <section class = 'nav-right flex-default'>
+                    <span class='nav-link-ctn'><a class='nav-link' href='#'>Login</a></span>
+                    <span class='nav-link-ctn'><a class='nav-link' href='#'>Register</a></span>
+                </section>
+            </div>
+        </nav>
+    </header>
+    <!--Main Content-->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
