@@ -1,0 +1,81 @@
+.user-register{
+    background: white;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.register-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.form-field-set > p {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field-set > p > input{
+    margin: 10px 0;
+    font-size: 18px;
+    padding: 5px 8px;
+    border-style: none;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 3px;
+}
+
+.form-field-set  .helptext{
+    font-size: 12px;
+    color: rgb(155, 155, 155);
+}
+
+.form-field-set ul{
+    list-style: disc;
+    font-size: 14px;
+    margin-left: 40px;
+}
+
+.form-field-set  li{
+    color: rgb(155, 155, 155);
+}
+
+.form-submit-button{
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    color: rgb(23, 184, 170);
+    border: 1px solid rgb(23, 184, 170);
+    border-radius: 5px;
+    background: white;
+    transition: background 0.5s linear, color 0.3s linear;
+}
+
+.form-submit-button:hover{
+    cursor: pointer;
+    color:white;
+    background: rgb(23, 184, 170);
+    transition: background 0.5s linear, color 0.5s linear;
+}
+
+.legend-style-1{
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.form-footer-small{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+.errorlist > li{
+    color: red;
+    padding: 5px 0;
+}
+

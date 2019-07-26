@@ -1,10 +1,14 @@
 {% extends "blog/base.html" %}
+{% load static %}
 
 {% block title %}
     Blog About
 {% endblock %}
 
+{% block stylesheets %}
+    <link rel="stylesheet" type='text/css' href="{% static 'blog/post.css' %}">
+{% endblock %}
+
 
 {% block content %}
-    <h1>Contents are supposed to go here. </h1>
 {% endblock %}

@@ -1,0 +1,81 @@
+@import 'nav.css';
+
+body{
+    background: rgb(240, 240, 240);
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+main{
+    margin-top: 100px;
+    display: flex;
+    max-width: 60%;
+    min-width: 350px;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 860px){
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+.main-section{
+    display:flex;
+    flex-direction: column;
+    min-width: 350px;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+
+.flex-default{
+    display:flex;
+    align-items: center;
+}
+
+.flex-horizontal-ctr{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-vertical-ctr{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fixed-top{
+    position: fixed;
+    top: 0px;
+}
+
+.bg-dark{
+    background: rgb(37, 37, 38);
+}
+
+.border-style-1{
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 3px;
+}
+
+.margin-top-20{
+    margin-top: 20px;
+}
+
+.margin-vert-10{
+    margin: 10px 0;
+}
+
