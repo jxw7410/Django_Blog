@@ -55,6 +55,7 @@ main{
     align-items: center;
 }
 
+
 .flex-horizontal-ctr{
     display:flex;
     justify-content: center;
@@ -90,3 +91,10 @@ main{
     margin: 10px 0;
 }
 
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+
+.padding-10{
+    padding: 10px;
+}

@@ -1,0 +1,52 @@
+.media{
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.user-profile{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+.profile-ctn{
+    height: 100px;
+}
+
+.media-body{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.account-heading{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(50,50,50);
+}
+
+
+.text-secondary{
+    color: grey;
+    font-size: 14px;
+}
+
+.form-field-set > p > input[type=file]{
+    display: flex;
+    align-items: center;
+}
+.form-field-set > p > input[type=file]:hover{
+    cursor: pointer;
+}
+
+.form-field-set > p > input[type=file]:active{
+    outline: none;
+}
+
+.form-field-set > p > input[type=file]:focus{
+    outline: none;
+}
