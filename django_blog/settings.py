@@ -120,6 +120,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static_global")
 ]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+LOGIN_REDIRECT_URL = 'blog-home'
+#This is what the login_required decorator seeks. Realisically I can also overwrite
+#The decorator, and have it functionally target a login page.
+LOGIN_URL = 'user-login'

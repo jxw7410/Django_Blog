@@ -25,6 +25,7 @@ header {
 }
 
 .nav-link{
+    white-space: nowrap;
     text-decoration: none;
     color: rgb(240, 240, 240);
 }

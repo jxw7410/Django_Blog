@@ -20,10 +20,14 @@
                     <span class='nav-link-ctn'><a class='nav-link' href="{% url 'blog-home' %}">Home</a></span>
                     <span class='nav-link-ctn'><a class='nav-link' href="{% url 'blog-about' %}">About</a></span>
                 </section>
-
                 <section class = 'nav-right flex-default'>
-                    <span class='nav-link-ctn'><a class='nav-link' href='#'>Login</a></span>
-                    <span class='nav-link-ctn'><a class='nav-link' href="{% url 'user-register'%}">Register</a></span>
+                    {% if user.is_authenticated %}
+                        <span class='nav-link-ctn'><a class='nav-link' href='{% url "user-profile" %}'>Profile</a></span>
+                        <span class='nav-link-ctn'><a class='nav-link' href='{% url "user-logout" %}'>Log Out</a></span>
+                    {% else %}
+                        <span class='nav-link-ctn'><a class='nav-link' href='{% url "user-login" %}'>Login</a></span>
+                        <span class='nav-link-ctn'><a class='nav-link' href="{% url 'user-register'%}">Register</a></span>
+                    {% endif %}
                 </section>
             </div>
         </nav>
@@ -33,7 +37,7 @@
         <div class='main-section'>
         {% if messages %}
             {% for message in messages %}
-                <div>
+                <div class='alert alert-{{message.tags}}'>
                     {{message}}
                 </div>
             {% endfor %}

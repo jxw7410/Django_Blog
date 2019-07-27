@@ -34,12 +34,13 @@
 
 .form-field-set ul{
     list-style: disc;
-    font-size: 14px;
+    font-size: 12px;
     margin-left: 40px;
 }
 
 .form-field-set  li{
     color: rgb(155, 155, 155);
+    padding: 1px 0;
 }
 
 .form-submit-button{

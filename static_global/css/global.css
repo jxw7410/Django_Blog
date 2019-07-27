@@ -28,6 +28,17 @@ main{
 }
 
 
+.alert{
+    margin-bottom: 10px;
+    border: 1px solid lightgreen;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.alert-success{
+    background: rgba(0, 255, 0, 0.5);
+    color: green;
+}
 
 .main-section{
     display:flex;

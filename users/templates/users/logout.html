@@ -1,0 +1,20 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block title %}
+    LogOut
+{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" type='text/css' href="{% static 'users/main.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <div class='alert alert-success'>Successfully Logged Out.</div>
+    <div class='margin-vert-10'>
+        <small class="form-footer-small">
+            <a href="{% url 'user-login' %}">Login Again</a>
+        </small>
+    </div>
+
+{% endblock %}
