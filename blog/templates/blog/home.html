@@ -14,6 +14,7 @@
 {% block content %}
     {% for post in posts %}
         <div class='post border-style-1'>
+            <img class='user-profile' src="{{ post.author.profile.image.url }}" />
             <ul class='post-list'>
                 <li><span class='post-author'>{{post.author}}</span> <span class='post-date'>{{post.date_updated | date:"F d, Y"}}</span></li>
                 <li class='post-title'>{{post.title}}</li>
