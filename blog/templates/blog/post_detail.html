@@ -1,0 +1,24 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block title %}
+    Post Detail
+{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" type='text/css' href="{% static 'blog/post.css' %}">
+{% endblock %}
+
+
+<!-- Main is wrapped around this -->
+{% block content %}
+<div class='post border-style-1'>
+    <img class='user-profile' src="{{ post.author.profile.image.url }}" />
+    <ul class='post-list'>
+        <li><span class='post-author'>{{object.author}}</span> <span
+                class='post-date'>{{object.date_updated | date:"F d, Y"}}</span></li>
+        <li class='post-title'>{{object.title}}</li>
+        <li class='post-content'>{{object.content}}</li>
+    </ul>
+</div>
+{% endblock %}

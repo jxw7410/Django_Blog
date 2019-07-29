@@ -37,6 +37,9 @@
     padding-top: 10px;
     border-top: 1px solid rgb(175,175,175);
     font-size: 24px;
+}
+
+.post-title a{
     color: rgb(75, 75, 75);
 }
 
