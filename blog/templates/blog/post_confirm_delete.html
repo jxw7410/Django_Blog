@@ -1,0 +1,27 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block title %}
+Register
+{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" type='text/css' href="{% static 'users/main.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<div class='user-register border-style-1'>
+    <form class='register-form' method='POST'>
+        {% csrf_token %}
+        <fieldset class="form-field-set">
+            <legend class="legend-style-1"> Delete Post </legend>
+            <h2> Are you you want to delete this Post? </h2>
+        </fieldset>
+
+        <div class='confirm-delete-ctn margin-top-20'>
+            <input class='post-delete' type='submit' value='Yuuuuur' />
+            <a class='cancel-button' href='{% url "blog-home" %}'>Cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

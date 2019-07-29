@@ -9,7 +9,6 @@
     justify-content: center;
     flex-direction: column;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgb(150, 150, 150);
 }
 
 .form-field-set > p {
@@ -79,4 +78,55 @@
     color: red;
     padding: 5px 0;
 }
+
+.form-footer{
+    padding: 10px 0;
+    border-top: 1px solid rgb(150, 150, 150);
+}
+
+
+.register-form textarea{
+	margin: 5px 0;
+	resize: vertical;
+	border-radius: 3px;
+    border-color: rgb(200, 200, 200);
+    font-size: 16px;
+    padding: 5px;
+}
+
+
+
+.confirm-delete-ctn{
+    display: flex;
+    align-items:  center;
+}
+
+.post-delete{
+    border-radius: 3px;
+    border: 1px solid red;
+    background: red;
+    padding: 5px;
+    color: white;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: background 0.5s linear, color 0.3s linear;
+}
+
+.post-delete:hover{
+    color: red;
+    background: white;
+    cursor: pointer;
+    transition: background 0.5s linear, color 0.3s linear;
+}
+
+.cancel-button{
+    padding: 6px;
+    border-radius: 3px;
+    color: rgb(23, 184, 170);
+    border: 1px solid rgb(23, 184, 170);
+    font-size: 16px;
+}
+
+
+
 

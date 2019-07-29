@@ -24,6 +24,10 @@
     height: 100%;
 }
 
+
+.post-list > li:first-child{
+    padding: 10px 0;
+}
 .post-author{
     color: rgb(43, 126, 221);
     font-size: 24px;
@@ -46,4 +50,42 @@
 .post-content{
     padding-top: 10px;
 }
+
+
+
+.link-btn{
+    padding: 5px;
+    margin: 0 3px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.update-link{
+    color: white;
+    background: rgb(80, 80, 80);
+    border-color: rgb(80, 80, 80);
+    transition: background 0.5s linear, color 0.3s linear;
+}
+
+.delete-link{
+    color: white;
+    background: red;
+    border-color: red;
+    transition: background 0.5s linear, color 0.3s linear;
+}
+
+
+.update-link:hover{
+    color: rgb(80, 80, 80);
+    background: white;
+    transition: background 0.5s linear, color 0.3s linear;
+}
+
+.delete-link:hover{
+    color: red;
+    background:  white;
+    transition: background 0.5s linear, color 0.3s linear;
+}
+
+
 

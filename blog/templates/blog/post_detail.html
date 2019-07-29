@@ -15,8 +15,14 @@
 <div class='post border-style-1'>
     <img class='user-profile' src="{{ post.author.profile.image.url }}" />
     <ul class='post-list'>
-        <li><span class='post-author'>{{object.author}}</span> <span
-                class='post-date'>{{object.date_updated | date:"F d, Y"}}</span></li>
+        <li>
+            <span class='post-author'>{{object.author}}</span> 
+            <span class='post-date'>{{object.date_updated | date:"F d, Y"}}</span>
+            {% if object.author == user %}
+            <a class='link-btn update-link' href='{% url  "blog-post-update" object.pk %}'>Update</a>
+            <a class='link-btn delete-link' href='{% url "blog-post-delete" object.pk %}'>Delete</a>
+            {% endif %}
+        </li>
         <li class='post-title'>{{object.title}}</li>
         <li class='post-content'>{{object.content}}</li>
     </ul>
